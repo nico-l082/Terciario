@@ -19,11 +19,17 @@ namespace Terciario.Models
         {
             this.nombre = nombre;
         }
+    
+        public void SetCantidad(int cantidad)
+        {
+            this.cantidad = cantidad; 
+        }
         public Bebida(string nombre, int cantidad)
         {
             this.nombre = nombre;
             this.cantidad = cantidad;
         }
+        public Bebida() { }
         public void tomarse(int cuantoBebio)
         {
             this.cantidad -= cuantoBebio;
