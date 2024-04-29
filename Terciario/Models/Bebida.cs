@@ -17,10 +17,13 @@ namespace Terciario.Models
 
         public void Tomarse(int cuantoBebio)
         {
+            Cantidad -= cuantoBebio;
+            /*
             if (cuantoBebio > 0 && cuantoBebio <= Cantidad)
                 Cantidad -= cuantoBebio;
             else
                 Console.WriteLine("La cantidad a beber es inválida o excede la cantidad disponible.");
+            */
         }
     }
 }
