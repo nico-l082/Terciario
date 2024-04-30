@@ -7,10 +7,28 @@ namespace Terciario.Models
         public string Nombre { get; set; }
         public int Cantidad { get; set; }
 
+        //Como escribir de otra forma los getter y los setter's.
+        /*
+         
+        public string GetNombre()
+        {
+            return nombre;
+        }
+
+        public void SetCantidad(int cantidad)
+        {
+            this.Cantidad = cantidad
+        }
+        public void SetNombre(string nombre)
+        {
+            this.Nombre = nombre
+        }
+
+        */
         public Bebida(string nombre, int cantidad)
         {
-            Nombre = nombre;
-            Cantidad = cantidad;
+            this.Nombre = nombre;
+            this.Cantidad = cantidad;
         }
 
         public Bebida() { }
@@ -19,6 +37,8 @@ namespace Terciario.Models
         {
             Cantidad -= cuantoBebio;
             /*
+            //En caso de poder ingresar mas de una vez el "Tomarse" evaluara si esto llega a 0 evitando numeros negativos.
+
             if (cuantoBebio > 0 && cuantoBebio <= Cantidad)
                 Cantidad -= cuantoBebio;
             else
