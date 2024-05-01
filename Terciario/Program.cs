@@ -56,6 +56,26 @@ namespace Terciario
             vinoDos.Tomarse(10);
 
             Console.WriteLine(vinoDos.Nombre, vinoDos.Cantidad);
+
+            //Codigo para que el programa pueda ejecutar con lentitud, debido a que normalmente sin este codigo el programa abre y cierra rapidamente sin permitir ver la consola.
+            Console.ReadKey();
+
+            //-------------------------------------------------------------------------------------------
+            //max recomendado de vinos.
+            Console.WriteLine("---------------------------------");
+            mostrarRecomendacion(vinoDos);
+
+            //max recomendado de cervezas
+            Console.WriteLine("---------------------------------");
+            Cerveza cerveza = new Cerveza();
+            mostrarRecomendacion(cerveza);
+            
+
+        }
+
+        static void mostrarRecomendacion(IBebidaAlcoholica bebidaAlcoholica)
+        {
+            bebidaAlcoholica.maxRecomendado();
         }
     }
 }

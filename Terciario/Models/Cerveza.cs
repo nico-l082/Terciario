@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Terciario.Models
 {
-    internal class Vino : Bebida, IBebidaAlcoholica
+    internal class Cerveza : Bebida, IBebidaAlcoholica
     {
         /*
         public Vino(int Cantidad, string Nombre = "Vino") : base(Nombre, Cantidad)
@@ -14,17 +14,17 @@ namespace Terciario.Models
             
         }
        */
-        public Vino(string Nombre, int Cantidad) : base(Nombre, Cantidad)
+        public Cerveza(string Nombre, int Cantidad) : base(Nombre, Cantidad)
         {
-
         }
+        public Cerveza() { }
         public int Alcohol { get; set; }
 
         public void maxRecomendado()
         {
-            Console.WriteLine("El maximo permitido de vinos es de dos botellas por persona");
+            Console.WriteLine("El maximo permitido de cervezas es de dos birras por persona");
         }
 
-     
+
     }
 }
