@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Models\Bebida.cs" />
     <Compile Include="Models\Cerveza.cs" />
+    <Compile Include="Models\CervezaDB.cs" />
     <Compile Include="Models\IBebidaAlcoholica.cs" />
     <Compile Include="Models\Vino.cs" />
     <Compile Include="Program.cs" />

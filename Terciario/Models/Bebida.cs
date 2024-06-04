@@ -6,6 +6,7 @@ namespace Terciario.Models
     {
         public string Nombre { get; set; }
         public int Cantidad { get; set; }
+        public string marca { get; set; }
 
         //Como escribir de otra forma los getter y los setter's.
         /*

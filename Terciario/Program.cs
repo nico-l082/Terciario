@@ -7,7 +7,7 @@ namespace Terciario
     {
         static void Main(string[] args)
         {
-            //-------------------------------------------------------------------------------------------
+            /*-------------------------------------------------------------------------------------------
 
             //Vectores - Arrays
             int[] array = new int[5] {1, 2, 3, 4, 5};
@@ -76,6 +76,20 @@ namespace Terciario
         static void mostrarRecomendacion(IBebidaAlcoholica bebidaAlcoholica)
         {
             bebidaAlcoholica.maxRecomendado();
+        }
+
+        */
+
+            CervezaDB cervezaDB = new CervezaDB();
+
+            var cervezas = cervezaDB.getCervezas();
+
+            foreach (var c in cervezas)
+            {
+                Console.WriteLine(c.Nombre + " " + "Hola");
+            }
+
+            Console.ReadKey();
         }
     }
 }
