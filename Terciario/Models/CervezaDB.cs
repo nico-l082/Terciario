@@ -10,7 +10,7 @@ namespace Terciario.Models
     class CervezaDB
     {
 
-        private string connectionString = "Data Source=pc85;Initial Catalog=terciario;user=root;Password=malg123;";
+        private string connectionString = "Data Source=SQLSERVER\\SQLSERVER;Initial Catalog=bdg4;user=bdg4;password=bdg4";
 
         public List<Cerveza> getCervezas()
         {

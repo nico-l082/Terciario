@@ -86,7 +86,7 @@ namespace Terciario
 
             foreach (var c in cervezas)
             {
-                Console.WriteLine(c.Nombre + " " + "Hola");
+                Console.WriteLine(c.Nombre + " " + c.marca + " " + c.Cantidad + " " + c.Alcohol + " " + "Hola");
             }
 
             Console.ReadKey();
